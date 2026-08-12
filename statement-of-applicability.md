@@ -3,12 +3,12 @@
 ## Document Information
 | Field | Value |
 |-------|-------|
-| Organization | [Company Name] |
-| ISMS Scope | [Scope Description] |
+| Organization | CloudNative Analytics Ltd |
+| ISMS Scope | All information systems, infrastructure, and processes supporting CloudNative Analytics' B2B SaaS data analytics platform, including AWS cloud infrastructure (eu-west-1), employee endpoints, and customer data processing operations |
 | Version | 1.0 |
-| Last Updated | [Date] |
-| Approved By | [Name/Role] |
-| Next Review | [Date] |
+| Last Updated | August 12, 2026 |
+| Approved By | Callum McRae, GRC Analyst |
+| Next Review | August 12, 2027 |
 
 ---
 
@@ -191,7 +191,7 @@
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
-| 1.0 | | | Initial version |
+| 1.0 | 2026-08-12 | Callum McRae | Initial version — all 93 controls assessed, 5 exclusions defended, risk traceability and evidence index completed |
 
 ---
 
