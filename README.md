@@ -22,6 +22,22 @@ The Statement of Applicability (SoA) is one of the most misunderstood artifacts 
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
+## A Note From Me
+
+I built this project after spending time doing real GRC work, where the hardest 
+part was never listing controls — it was deciding what actually applied to a 
+small, resource-constrained organization instead of defaulting to "include 
+everything to be safe." That instinct to over-include feels safer, but it's 
+actually the weaker move: it produces a document nobody can defend under real 
+audit pressure.
+
+I wanted a project that forced me to sit in that uncomfortable seat — defending 
+an exclusion instead of avoiding the decision entirely. I also added an 
+AI-specific risk to this scenario, since predictive and generative AI features 
+are becoming an unavoidable part of nearly every SaaS platform today, GRC 
+included, and I wanted this portfolio to reflect where the discipline is 
+heading, not just where it's been.
+
 ---
 
 ## The Scenario
@@ -55,6 +71,7 @@ The company has completed a risk assessment identifying these top risks:
 | R-004 | Insider threat | Low | High | Medium |
 | R-005 | Third-party breach (AWS) | Low | Critical | High |
 | R-006 | Business continuity failure | Low | High | Medium |
+| R-007 | Bias, data leakage, or explainability failure in the ML-powered "Insight Recommendations" feature | Medium | High | High |
 
 ---
 
@@ -180,6 +197,11 @@ in 2021. The company:
 - Has no data centers (100% AWS)
 - Has no server rooms or equipment storage
 - Employees work from home locations
+- In 2025, CloudNative Analytics launched an ML-powered "Insight Recommendations" 
+  feature that surfaces predictive analytics to customers based on their uploaded 
+  data. This introduces AI-specific risks — training data handling, cross-tenant 
+  data leakage, model bias, and explainability — that traditional infrastructure 
+  controls don't fully address on their own.
 
 ### Risk Assessment Linkage
 Physical security risks are addressed through alternative controls:
