@@ -12,6 +12,36 @@
 
 ---
 
+## Executive Summary
+
+CloudNative Analytics has completed a full review of its information security 
+controls against the ISO 27001:2022 standard, covering all 93 controls the 
+standard defines. The goal of this review was not to adopt every possible 
+control, but to apply the right controls for how this company actually 
+operates — a fully remote, cloud-based business with no physical offices.
+
+**What we found:** 83 of the 93 controls apply to our business and are either 
+already in place (61), partially in place with a clear plan to finish (20), 
+or scheduled to begin (2). The remaining 10 controls do not apply to us — 
+mainly physical security requirements like office entry systems and equipment 
+monitoring, since we have no physical premises. In each of these cases, we've 
+confirmed that the underlying risk is still managed, just through a different 
+method (for example, our cloud provider, AWS, is responsible for physically 
+securing the data centers we use, and we verify this annually through their 
+independent audit reports).
+
+**What this means for the business:** every security decision in this document 
+is tied back to a specific, documented risk — such as unauthorized access to 
+customer data, or the risks introduced by our new AI-powered analytics feature. 
+Nothing has been included just to "look thorough," and nothing has been 
+excluded without a documented reason and a plan for how that risk is still 
+being managed.
+
+**Recommendation:** proceed to external certification audit as planned, using 
+this document as the foundation for that assessment.
+
+---
+
 ## Control Summary
 
 | Theme | Total | Applicable | Excluded | Implemented | Partial | Planned |
@@ -85,7 +115,6 @@
 
 ---
 
-## Theme 7: Physical Controls
 
 ## Theme 7: Physical Controls
 
@@ -163,7 +192,6 @@
 
 ---
 
-## Risk-to-Control Traceability
 
 ## Risk-to-Control Traceability
 
@@ -186,6 +214,55 @@
 > asset's criticality, not indiscriminate tagging.
 
 ---
+
+## Ambiguous Control Decisions
+
+Not every control decision in this SoA was clear-cut. In the interest of 
+transparency, the following decisions involved genuine judgment calls where 
+a reasonable case could be made either way. Flagging these proactively — 
+rather than presenting every decision as equally confident — is itself part 
+of demonstrating defensible judgment.
+
+### 7.7 — Clear Desk and Clear Screen
+**The tension:** This is traditionally an office-based control (locking away 
+paperwork, clearing physical desks). With no offices, a case could be made 
+to exclude it entirely, the same way 7.1–7.6 were excluded.
+**The call:** Included as applicable, because the underlying risk — someone 
+else viewing an unattended, unlocked screen — still exists in a home or 
+public setting, even without a traditional "desk" to consider. The control's 
+intent matters more than its literal office-context wording.
+**Why this is genuinely ambiguous:** A reasonable reviewer could argue the 
+opposite way, that this control's scope is specifically about physical office 
+environments and doesn't transfer cleanly to remote work.
+
+### 5.6 — Contact with Special Interest Groups
+**The tension:** This control typically applies to larger, more mature 
+security functions with dedicated threat-intelligence relationships (ISACs, 
+industry security forums). For an 85-person company, a case could be made 
+that this is disproportionate and should be excluded as not yet relevant 
+at this stage of maturity.
+**The call:** Marked applicable but "Planned" rather than excluded, since the 
+AI-related risk (R-007) makes external threat intelligence increasingly 
+relevant, and the cost of joining a threat-sharing forum is low relative 
+to the risk it addresses.
+**Why this is genuinely ambiguous:** Proportionality is subjective — another 
+reviewer might reasonably conclude this control is aspirational overreach 
+for a company this size at this stage.
+
+### R-001 Traceability Breadth
+**The tension:** R-001 (unauthorized access to customer data) maps to 38 of 
+93 controls in the traceability matrix — by far the widest coverage of any 
+risk. This could look like indiscriminate tagging rather than careful mapping.
+**The call:** Kept the full mapping, because R-001 is the only High-impact 
+risk tied to the company's core asset, so broad coverage reflects that 
+criticality rather than carelessness — a rationale documented directly 
+beneath the traceability matrix above.
+**Why this is genuinely ambiguous:** The line between "comprehensive" and 
+"padded" is subjective, and this is the one place in the document most 
+likely to draw an auditor's skepticism on first read.
+
+---
+
 
 ## Version History
 
