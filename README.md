@@ -381,4 +381,14 @@ After completing this project, answer:
 
 ---
 
+## Lessons Learned
+
+**What surprised me, and what kept the work honest.** Going in, I expected ISO 27001 to reward comprehensive coverage: include every control and claim everything is implemented. The standard's own guidance corrected that. A footnote made the point that certification is not about blanket compliance but about applying practical, relevant security controls, and that reframed the whole exercise. It kept me honest with the implementation status, 61 Implemented, 20 Partial, 2 Planned rather than a wall of green, and it made me ask "is this control actually relevant here?" for every Annex A control rather than defaulting to include.
+
+**The exclusions were more straightforward than I expected, for a specific reason.** All five documented exclusions were relatively easy to defend because the company is cloud-native. The physical and premises controls, such as securing offices and the physical protection of confidential information, were the natural candidates. My first instinct was that some physical safeguards would still be needed wherever confidential information could be handled, but ISO 27001:2022 treats Annex A as a set of controls to consider against actual risk, and with endpoint management and an Acceptable Use Policy already addressing that risk, excluding the premises controls held up.
+
+**What I would keep.** The risk-to-control traceability matrix was the most useful part as a learning tool. Mapping every applicable control back to a specific risk forced me to read all 93 controls and understand what each one is and why it exists, rather than skimming the familiar ones. That is the part of the process I would repeat on any future framework.
+
+---
+
 *Remember: ISO 27001 is not about maximal compliance. It's about proportionate, defensible security aligned to business reality.*
